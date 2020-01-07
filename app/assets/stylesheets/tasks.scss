@@ -35,7 +35,7 @@ body {
 
 button,
 input[type="checkbox"] {
-  outline: none;
+  -webkit-appearance:checkbox;
 }
 
 .hidden {
@@ -266,6 +266,15 @@ label[for='toggle-all'] {
               0 17px 2px -6px rgba(0, 0, 0, 0.2);
 }
 
+.author {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.author a {
+  color: #b83f45;
+}
+
 .todo-count {
   float: left;
   text-align: left;
@@ -341,6 +350,7 @@ html .clear-completed:active {
   text-decoration: underline;
 }
 
+
 /*
   Hack to remove background from Mobile Safari.
   Can't use it globally since it destroys checkboxes in Firefox
@@ -373,11 +383,3 @@ html .clear-completed:active {
   }
 }
 
-.author {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.author a {
-  color: #b83f45;
-}

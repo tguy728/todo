@@ -3,18 +3,18 @@
     // of the task and produces an HTML representation using
     // <li> tags
     function taskHtml(task) {
-      var checkedStatus = task.done ? "checked" : "";
-      var liClass = task.done ? "completed" : "";
-      var liElement = '<li id="listItem-' + task.id +'" class="' + liClass + '">' +
+    var checkedStatus = task.done ? "checked" : "";
+    var liClass = task.done ? "completed" : "";
+    var liElement = '<li id="listItem-' + task.id +'" class="' + liClass + '">' +
     '<div class="view"><input class="toggle" type="checkbox"' +
-        " data-id='" + task.id + "'" +
-        checkedStatus +
-        '><label>' +
-         task.title +
-         '</label></div></li>';
+      " data-id='" + task.id + "'" +
+      checkedStatus +
+      '><label>' +
+       task.title +
+       '</label></div></li>';
 
-      return liElement;
-    }
+    return liElement;
+  }
 
     // toggleTask takes in an HTML representation of
     // an event that fires from an HTML representation of

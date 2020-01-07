@@ -181,7 +181,6 @@ label[for='toggle-all'] {
   bottom: 0;
   margin: auto 0;
   border: none; /* Mobile Safari */
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -368,7 +367,6 @@ html .clear-completed:active {
   .toggle-all {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
-    -webkit-appearance: none;
     appearance: none;
   }
 }
